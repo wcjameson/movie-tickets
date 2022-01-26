@@ -15,21 +15,21 @@ Ticket.prototype.priceOfAge = function() {
   else if (this.age >= 55) {
     return this.price -= 6;
   }
-  else return this.price;
+  return this.price;
 }
 
 Ticket.prototype.matinee = function() {
   if (this.time === "3:00pm") {
     return this.price -= 2;
   }
-  else return this.price;
+  return this.price;
 }
 
 Ticket.prototype.priceOfMovie = function() {
   if (this.movie === "Cars") {
     return this.price -= 2;
   }
-  else return this.price;
+  return this.price;
 }
 
 $(document).ready(function() {
@@ -44,7 +44,7 @@ $(document).ready(function() {
     newTicket.matinee();
     newTicket.priceOfMovie();
 
-    $("#output").text(this.price)
+    $("#output").text(newTicket.price);
     
   })
 })
