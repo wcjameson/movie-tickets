@@ -15,14 +15,15 @@ Ticket.prototype.priceOfAge = function() {
   else if (this.age >= 55) {
     return this.price -= 6;
   }
+  else return this.price;
 }
 
 Ticket.prototype.matinee = function() {
   if (this.time === "3:00pm") {
     return this.price -= 2;
   }
+  else return this.price;
 }
-
 
 Ticket.prototype.priceOfMovie = function() {
   if (this.movie === "Cars") {
@@ -30,3 +31,5 @@ Ticket.prototype.priceOfMovie = function() {
   }
   else return this.price;
 }
+
+

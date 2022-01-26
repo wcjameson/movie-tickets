@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel='stylesheet' href='css/bootstrap.css' type='text/css'>
+  <link rel='stylesheet' href='css/styles.css' type='text/css'>
+  <script src='js/jquery-3.6.0.js'></script>
+  <script src='js/scripts.js'></script>
+  <title>Movie Tickets</title>
+</head>
+<body>
+  <form class="formbox">
+    <div>
+      <h2>welcome to</h2>
+      <h1>Epicodus Movie Center!</h1>
+    </div>
+    <div class="form-group">
+      <label for="movie">What Movie would you like to see?</label>
+      <select class="form-control" name="movie" id="movie">
+        <option value="Cars">Cars</option>
+        <option value="Frozen">Frozen</option>
+        <option value="Despicable Me">Despicable Me</option>
+        <option value="Cats the Musical">Cats the Musical</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="time">What time would you like to go?</label>
+      <select class="form-control" name="time" id="time">
+        <option value="3:00pm">3:00pm (matinee)</option>
+        <option value="6:00pm">6:00pm</option>
+        <option value="9:00pm">9:00pm</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="age">How old are you?</label>
+      <select class="form-control" name="age" id="age">
+        <option value="12">Youth (12yo or younger)</option>
+        <option value="13">student (13yo- 17yo)</option>
+        <option value="18">Adult (18yo - 54yo)</option>
+        <option value="55">Senior (55 and up)</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-dark btn-lg btn-block">SUBMIT</button>
+  </form>
+</body>
+</html>
+
