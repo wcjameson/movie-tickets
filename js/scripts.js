@@ -32,4 +32,19 @@ Ticket.prototype.priceOfMovie = function() {
   else return this.price;
 }
 
+$(document).ready(function() {
+  $("form").submit(function(event) {
+    event.preventDefault();
+    const inputMovie = $("input#movie").val();
+    const inputTime = $("input#time").val();
+    const inputAge = $("input#age").val();
 
+    let newTicket = new Ticket(inputMovie, inputTime, inputAge)
+    newTicket.priceOfAge();
+    newTicket.matinee();
+    newTicket.priceOfMovie();
+
+    $("#output").text(this.price)
+    
+  })
+})
