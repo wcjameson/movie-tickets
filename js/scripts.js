@@ -35,9 +35,9 @@ Ticket.prototype.priceOfMovie = function() {
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-    const inputMovie = $("input#movie").val();
-    const inputTime = $("input#time").val();
-    const inputAge = $("input#age").val();
+    const inputMovie = $("#movie").val();
+    const inputTime = $("#time").val();
+    const inputAge = $("#age").val();
 
     let newTicket = new Ticket(inputMovie, inputTime, inputAge)
     newTicket.priceOfAge();
